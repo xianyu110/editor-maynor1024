@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>MaynorAI 文章同步助手 - 多平台草稿同步</title>
+  <meta name="description" content="把文章同步为微信公众号、知乎、掘金、CSDN、哔哩哔哩专栏等 20 个平台的草稿，不会直接发布。通过本机浏览器扩展复用已登录会话，登录凭据留在你的浏览器里。" />
+  <link rel="canonical" href="https://product.maynor1024.live/" />
+  <link rel="icon" href="assets/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" href="assets/favicon-32.png" sizes="32x32" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="#">
+        <span class="brand-mark" aria-hidden="true">M</span>
+        MaynorAI 文章同步助手
+      </a>
+      <nav class="nav-center" aria-label="页面导航">
+        <a href="#features">功能特性</a>
+        <a href="#mcp">本机连接</a>
+        <a href="#install">安装教程</a>
+        <a href="#platforms">支持平台</a>
+        <a href="#faq">常见问题</a>
+      </nav>
+      <a class="header-cta" href="https://editor.maynor1024.live/">打开编辑器</a>
+      <button class="menu-btn" type="button" aria-label="打开菜单" aria-expanded="false" data-menu-toggle>
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+  <div class="mobile-nav" id="mobile-nav-panel" hidden>
+    <a href="#features">功能特性</a>
+    <a href="#mcp">本机连接</a>
+    <a href="#install">安装教程</a>
+    <a href="#platforms">支持平台</a>
+    <a href="#faq">常见问题</a>
+    <a href="https://editor.maynor1024.live/">打开编辑器</a>
+  </div>
+
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <div class="eyebrow hero-eyebrow">专为 OPC｜一人公司打造 · 浏览器扩展</div>
+        <h1>
+          <span class="line">一键同步文章到</span>
+          <span class="accent">20 主流平台</span>
+        </h1>
+        <p class="hero-lead">在 MaynorAI 编辑器写好文章后，勾选目标平台，即可把内容保存为<span class="nowrap">微信公众号</span>、<span class="nowrap">知乎</span>、<span class="nowrap">掘金</span>、<span class="nowrap">CSDN</span>、<span class="nowrap">哔哩哔哩专栏</span>等平台的草稿，告别重复复制粘贴。</p>
+        <a class="hero-link" href="#mcp">了解本机扩展如何连接 →</a>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="https://editor.maynor1024.live/">打开编辑器</a>
+          <a class="btn btn-ghost" href="https://editor.maynor1024.live/MaynorAI-article-sync-extension.zip">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4M5 21h14" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            下载扩展手动安装
+          </a>
+        </div>
+        <div class="hero-stats" aria-label="产品数据">
+          <div><b>20</b><span>同步平台</span></div>
+          <div><b>1 键</b><span>多站触达</span></div>
+          <div><b>草稿优先</b><span>从不直接发布</span></div>
+        </div>
+        <div class="hero-mock" aria-hidden="true">
+          <div class="browser">
+            <div class="browser-bar">
+              <div class="dots"><i></i><i></i><i></i></div>
+              <div class="addr">editor.maynor1024.live</div>
+            </div>
+            <div class="browser-body">
+              <div class="article">
+                <h3>把一篇 Markdown 同步到二十个平台草稿箱</h3>
+                <p>MaynorAI 文章同步助手是一款本地优先的多平台写作工具。你在编辑器中完成标题和正文，由已安装的浏览器扩展复用当前登录态，把文章保存到各平台草稿箱。</p>
+                <p><strong>核心能力：</strong></p>
+                <ol>
+                  <li>一次勾选多个目标平台，减少重复粘贴。</li>
+                  <li>默认只创建或更新草稿，发布前仍由你在平台后台核对。</li>
+                  <li>登录凭据留在浏览器，不必向网页提交平台账号密码。</li>
+                  <li>可在历史任务中查看结果，并对失败项重试。</li>
+                </ol>
+              </div>
+              <aside class="popup">
+                <h4><span class="brand-mark">M</span> 同步到草稿箱</h4>
+                <div class="plat is-on"><span class="pmark" style="background:#07C160;width:20px;height:20px;font-size:10px;border-radius:6px">微</span>微信公众号<span class="box"></span></div>
+                <div class="plat is-on"><span class="pmark" style="background:#0066FF;width:20px;height:20px;font-size:10px;border-radius:6px">知</span>知乎<span class="box"></span></div>
+                <div class="plat"><span class="pmark" style="background:#FB7299;width:20px;height:20px;font-size:10px;border-radius:6px">哔</span>哔哩哔哩专栏<span class="box"></span></div>
+                <a class="btn btn-primary" href="https://editor.maynor1024.live/">同步到 2 个平台</a>
+              </aside>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="install">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">安装教程</span>
+          <h2>三步开始使用</h2>
+          <p>无需注册，安装扩展后即可使用。支持 Chrome、Edge 等 Chromium 内核浏览器。</p>
+        </div>
+        <div class="steps">
+          <article class="step">
+            <div class="step-num">1</div>
+            <h3>安装扩展</h3>
+            <p>下载扩展安装包并解压。在 Chrome 打开 <code>chrome://extensions</code>（Edge 为 <code>edge://extensions</code>），开启「开发人员模式」，选择「加载已解压的扩展程序」。</p>
+          </article>
+          <article class="step blue">
+            <div class="step-num">2</div>
+            <h3>登录各平台</h3>
+            <p>在浏览器中正常登录微信公众号、知乎、CSDN、哔哩哔哩专栏等平台网页端。扩展会读取当前浏览器的登录状态，无需输入任何账号密码，凭据不离开你的浏览器。</p>
+          </article>
+          <article class="step green">
+            <div class="step-num">3</div>
+            <h3>同步到草稿箱</h3>
+            <p>打开编辑器写好文章，点击「同步到草稿箱」，勾选目标平台并创建任务。文章会以草稿形式写入各平台，检查排版后再手动发布。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="features">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">功能特性</span>
+          <h2>为多平台创作者准备的草稿工作台</h2>
+          <p>在 MaynorAI 编辑器里一次写好，再同步到已登录平台的草稿箱，减少重复排版和来回粘贴。</p>
+        </div>
+        <div class="features">
+          <article class="feature">
+            <div class="ficon c-orange" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>一键多平台同步</h3>
+            <p>在编辑器中勾选目标平台，一次提交即可把同一篇文章写入多个草稿箱，节省大量重复操作时间。</p>
+          </article>
+          <article class="feature">
+            <div class="ficon c-blue" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="5" width="16" height="14" rx="2"/><path d="M8 9h8M8 13h5" stroke-linecap="round"/></svg>
+            </div>
+            <h3>公众号排版适配</h3>
+            <p>将 Markdown 转为更适合公众号的富文本，代码块和图片会按规则处理；建议仍在公众号草稿中预览后再发布。</p>
+          </article>
+          <article class="feature">
+            <div class="ficon c-green" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3 5 7v5c0 5 3.2 8 7 9 3.8-1 7-4 7-9V7l-7-4z" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>登录凭据留在浏览器</h3>
+            <p>扩展复用你已在网页端登录的会话，不必向 MaynorAI 提交平台 Cookie 或账号密码。</p>
+          </article>
+          <article class="feature">
+            <div class="ficon c-purple" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 19V7l8-4 8 4v12l-8 4-8-4z"/><path d="M12 3v16M4 7l8 4 8-4" stroke-linecap="round"/></svg>
+            </div>
+            <h3>云端文章夹与本地草稿</h3>
+            <p>登录编辑器后，可以把文章保存到你的云端文章夹；未登录时草稿仍可先留在本机，随时继续编辑。</p>
+          </article>
+          <article class="feature">
+            <div class="ficon c-amber" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 2" stroke-linecap="round"/></svg>
+            </div>
+            <h3>同步历史追踪</h3>
+            <p>每次同步结果都会记入历史任务。你可以查看各平台状态，并对失败项直接重试或再次发送。</p>
+          </article>
+          <article class="feature">
+            <div class="ficon c-pink" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="3"/><path d="M6 19c1.2-3 3.2-4.5 6-4.5S16.8 16 18 19" stroke-linecap="round"/></svg>
+            </div>
+            <h3>先存草稿，核对后发布</h3>
+            <p>默认只创建或更新草稿，不会直接发布。请到各平台后台检查标题、排版和图片，确认无误后再发布。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <div class="mcp-band">
+      <section id="mcp">
+        <div class="wrap mcp-grid">
+          <div class="mcp-copy">
+            <span class="eyebrow">本机扩展连接</span>
+            <h2>用本机扩展把文章写入你的<br /><span class="accent">多平台草稿箱</span></h2>
+            <p>编辑器通过本机浏览器扩展完成同步。扩展使用你已有的网页登录态，不会把平台 Cookie 交出去。需要逐步说明时，可直接打开编辑器查看实时安装与连接指引。</p>
+            <ol class="mcp-steps">
+              <li>
+                <span class="idx">01</span>
+                <div><b>先检查扩展与登录状态</b><span>确认扩展已连接，并查看目标平台是否已在浏览器中登录。</span></div>
+              </li>
+              <li>
+                <span class="idx">02</span>
+                <div><b>在编辑器提供文章并同步</b><span>写好标题和 Markdown / HTML 正文，勾选平台后创建同步任务。</span></div>
+              </li>
+              <li>
+                <span class="idx">03</span>
+                <div><b>查询结果，核对平台草稿</b><span>在历史任务中查看各平台结果，再到平台后台核对并发布。</span></div>
+              </li>
+            </ol>
+            <a class="btn btn-primary" href="#mcp-setup">查看连接说明 ↗</a>
+          </div>
+          <div class="workflow" role="img" aria-label="编辑器通过本机连接调用浏览器扩展，将提供的文章保存为已登录平台的草稿，Cookie 留在浏览器">
+            <div class="workflow-head">
+              <div class="dots"><i></i><i></i><i></i></div>
+              <div class="wf-label">LOCAL WORKFLOW</div>
+            </div>
+            <div class="wf-row">
+              <div class="wf-card">
+                <em>EDITOR / AI</em>
+                <strong>编辑器或助手</strong>
+                <p>提交标题与正文</p>
+              </div>
+              <div class="wf-arrow">本机 →</div>
+              <div class="wf-card alt">
+                <em>BRIDGE</em>
+                <strong>本机连接通道</strong>
+                <p>转发请求与结果</p>
+              </div>
+            </div>
+            <div class="wf-down">带本机扩展的安全连接 ↓</div>
+            <div class="wf-ext">
+              <div>
+                <strong>浏览器扩展</strong>
+                <p>使用已有登录态与平台适配器</p>
+              </div>
+              <span class="cookie">Cookie 留在浏览器</span>
+            </div>
+            <div class="wf-tools">
+              <span>查询平台</span>
+              <span>检查登录</span>
+              <span>上传图片</span>
+              <span>保存草稿</span>
+              <span>查询结果</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="mcp-setup">
+        <div class="wrap">
+          <div class="setup-card">
+            <div class="setup-top">
+              <div>
+                <h2>本机扩展连接说明</h2>
+                <p>在同一台电脑上打开浏览器和编辑器。扩展只在本地工作，连接密钥生成并保存在插件里。更完整的图文步骤，请查看<a class="nowrap" href="https://editor.maynor1024.live/" style="color:#fc5531;font-weight:600">编辑器中的安装指引</a>。</p>
+              </div>
+              <span class="pill">本机连接</span>
+            </div>
+            <div class="setup-steps">
+              <article class="setup-step">
+                <div class="n">01</div>
+                <h3>下载并加载扩展</h3>
+                <p>下载官方 ZIP 并解压，在 Chrome 116+ 或 Edge 中以开发人员模式加载已解压的文件夹。</p>
+              </article>
+              <article class="setup-step">
+                <div class="n">02</div>
+                <h3>在浏览器登录平台</h3>
+                <p>先打开需要同步的平台网页并完成登录。扩展会复用当前会话，不必填写账号密码。</p>
+              </article>
+              <article class="setup-step">
+                <div class="n">03</div>
+                <h3>回到编辑器完成检测</h3>
+                <p>打开编辑器，点击「扩展连接」或「重新检测」。显示已连接后，即可把文章同步为草稿。</p>
+              </article>
+            </div>
+            <div class="setup-tabs">
+              <span class="label">安装路径示例</span>
+              <button type="button" class="tab is-active" data-os="chrome">Chrome</button>
+              <button type="button" class="tab" data-os="edge">Edge / Windows</button>
+            </div>
+            <div class="codebox">
+              <div class="code-head">
+                <span id="code-label">Chrome · 手动加载</span>
+                <button type="button" class="copy-btn" data-copy="https://editor.maynor1024.live/MaynorAI-article-sync-extension.zip">复制下载链接</button>
+              </div>
+              <pre id="code-body"></pre>
+            </div>
+            <p class="setup-note">扩展安装包与编辑器中提供的是同一份官方文件。加载后请保持浏览器开启，并在普通 HTTPS 页面中使用各平台登录态。</p>
+            <div class="win-tips" id="win-tips">
+              <h3>Windows / Edge 提示</h3>
+              <ul>
+                <li>Edge 请打开 <code>edge://extensions</code>，同样开启「开发人员模式」后再加载解压后的文件夹。</li>
+                <li>请确保解压后的目录里能直接看到 <code>manifest.json</code>，不要只选中外层空文件夹。</li>
+                <li>如果编辑器提示未检测到扩展，请确认扩展已启用，然后刷新编辑器页面并点击「重新检测」。</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section id="platforms">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">支持平台</span>
+          <h2>覆盖主流内容分发渠道</h2>
+          <p>当前可同步到 20 个平台的草稿箱，持续扩展中</p>
+        </div>
+        <div class="platforms">
+        <div class="platform"><span class="pmark" style="background:#07C160">微</span>微信公众号</div>
+        <div class="platform"><span class="pmark" style="background:#0066FF">知</span>知乎</div>
+        <div class="platform"><span class="pmark" style="background:#1E80FF">掘</span>掘金</div>
+        <div class="platform"><span class="pmark" style="background:#FC5531">C</span>CSDN</div>
+        <div class="platform"><span class="pmark" style="background:#E6162D">博</span>微博</div>
+        <div class="platform"><span class="pmark" style="background:#4E6EF2">百</span>百家号</div>
+        <div class="platform"><span class="pmark" style="background:#2E7ACC">园</span>博客园</div>
+        <div class="platform"><span class="pmark" style="background:#F04142">头</span>头条</div>
+        <div class="platform"><span class="pmark" style="background:#E60012">51</span>51CTO</div>
+        <div class="platform"><span class="pmark" style="background:#EA6F5A">简</span>简书</div>
+        <div class="platform"><span class="pmark" style="background:#009A57">sf</span>思否</div>
+        <div class="platform"><span class="pmark" style="background:#24B05A">开</span>开源中国</div>
+        <div class="platform"><span class="pmark" style="background:#FB7299">哔</span>哔哩哔哩专栏</div>
+        <div class="platform"><span class="pmark" style="background:#E31414">易</span>网易号</div>
+        <div class="platform"><span class="pmark" style="background:#00A4FF">腾</span>腾讯云开发者社区</div>
+        <div class="platform"><span class="pmark" style="background:#111111">抖</span>抖音长文</div>
+        <div class="platform"><span class="pmark" style="background:#111111">抖</span>抖音图文</div>
+        <div class="platform"><span class="pmark" style="background:#FF2442">红</span>小红书长文笔记</div>
+        <div class="platform"><span class="pmark" style="background:#FF2442">红</span>小红书图文笔记</div>
+        <div class="platform"><span class="pmark" style="background:#FF6A00">阿</span>阿里云开发者社区</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="how">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">使用方式</span>
+          <h2>两种触发场景</h2>
+          <p>无论是刚写完的新文章，还是想对历史任务重试或补发，都有对应的使用路径</p>
+        </div>
+        <div class="scenes">
+          <article class="scene">
+            <div class="scene-kicker">
+              <div class="scene-ico c-orange" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 20h14M7 16V6l5-2 5 2v10" stroke-linejoin="round"/></svg>
+              </div>
+              <h3>场景一：写完即同步<span>在 MaynorAI 编辑器中完成并发送草稿</span></h3>
+            </div>
+            <ol>
+              <li><i>1</i>在编辑器中写好标题和正文，必要时先预览排版</li>
+              <li><i>2</i>点击「同步到草稿箱」，勾选要写入的目标平台</li>
+              <li><i>3</i>创建同步任务，各平台保存为草稿，再到后台核对后发布</li>
+            </ol>
+          </article>
+          <article class="scene blue">
+            <div class="scene-kicker">
+              <div class="scene-ico c-blue" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M8 7h11M8 12h11M8 17h7" stroke-linecap="round"/><circle cx="5" cy="7" r="1"/><circle cx="5" cy="12" r="1"/><circle cx="5" cy="17" r="1"/></svg>
+              </div>
+              <h3>场景二：从历史任务重试或补发<span>在同步历史中查看结果并再次发送</span></h3>
+            </div>
+            <ol>
+              <li><i>1</i>打开编辑器中的历史任务，查看各平台成功或失败原因</li>
+              <li><i>2</i>对失败项直接重试，或重新选择平台再次同步</li>
+              <li><i>3</i>确认新的结果写入历史后，到对应平台草稿箱检查并发布</li>
+            </ol>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">常见问题</span>
+          <h2>你可能想了解的</h2>
+          <p>还有其他问题？可打开 <a href="https://editor.maynor1024.live/" style="color:#fc5531">MaynorAI 编辑器</a> 查看扩展连接说明</p>
+        </div>
+        <div class="faq-list">
+          <article class="faq-item is-open">
+            <button type="button" aria-expanded="true">扩展连接后，我的登录信息安全吗？<span class="chev">⌄</span></button>
+            <div class="answer">扩展使用浏览器已有登录态，不会把平台 Cookie 交给 MaynorAI 网站。文章内容只用于创建各平台草稿；请在你信任的浏览器配置文件中登录平台账号。</div>
+          </article>
+          <article class="faq-item">
+            <button type="button" aria-expanded="false">如何安装并连接扩展？<span class="chev">⌄</span></button>
+            <div class="answer">下载官方 ZIP，解压后在 Chrome 或 Edge 的扩展管理页开启开发人员模式并加载该文件夹。然后打开编辑器，点击「扩展连接」或「重新检测」。编辑器页面也提供同样的实时安装说明。</div>
+          </article>
+          <article class="faq-item">
+            <button type="button" aria-expanded="false">会直接发布文章吗？<span class="chev">⌄</span></button>
+            <div class="answer">不会。同步只会创建或更新目标平台的草稿，不会直接发布。保存完成后，请到各平台后台核对标题、排版和图片，再由你手动发布。</div>
+          </article>
+          <article class="faq-item">
+            <button type="button" aria-expanded="false">同步后的文章在哪里？<span class="chev">⌄</span></button>
+            <div class="answer">同步后的文章会以草稿形式保存在各目标平台。你可以在对应平台的后台或草稿箱中查看、编辑后再正式发布。</div>
+          </article>
+          <article class="faq-item">
+            <button type="button" aria-expanded="false">为什么平台显示未登录？<span class="chev">⌄</span></button>
+            <div class="answer">请先在当前浏览器中打开对应平台并完成网页端登录。扩展依赖当前浏览器的 Cookie 登录态，未登录的站点将无法写入草稿。</div>
+          </article>
+          <article class="faq-item">
+            <button type="button" aria-expanded="false">支持哪些浏览器？<span class="chev">⌄</span></button>
+            <div class="answer">支持 Chrome、Edge 等 Chromium 内核浏览器。商店审核完成前，请按教程手动加载扩展安装包。</div>
+          </article>
+          <article class="faq-item">
+            <button type="button" aria-expanded="false">公众号排版会乱吗？<span class="chev">⌄</span></button>
+            <div class="answer">扩展会将 Markdown 转为更适合公众号的富文本，代码块等会按规则处理。不同平台的渲染仍可能有差异，建议在公众号草稿中预览后再发布。</div>
+          </article>
+          <article class="faq-item">
+            <button type="button" aria-expanded="false">同步失败怎么办？<span class="chev">⌄</span></button>
+            <div class="answer">可在编辑器的历史任务中查看失败原因并重试。也可检查网络、目标平台是否已登录，或该平台是否正在维护。</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <div class="wrap">
+        <h2>打开编辑器，一键同步全网</h2>
+        <p class="sub">浏览器登录态 · 草稿优先 · 多平台同步</p>
+        <div class="hero-actions">
+          <a class="btn btn-on-brand" href="https://editor.maynor1024.live/">打开编辑器</a>
+          <a class="btn btn-outline-light" href="https://editor.maynor1024.live/MaynorAI-article-sync-extension.zip">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4M5 21h14" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            下载扩展手动安装
+          </a>
+        </div>
+        <p class="cta-fine">支持 Chrome 等 Chromium 内核浏览器</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <a class="brand" href="#">
+        <span class="brand-mark" aria-hidden="true">M</span>
+        MaynorAI 文章同步助手
+      </a>
+      <nav class="foot-links" aria-label="页脚导航">
+        <a href="#features">功能特性</a>
+        <a href="#mcp">本机连接</a>
+        <a href="#install">安装教程</a>
+        <a href="#platforms">支持平台</a>
+        <a href="#faq">常见问题</a>
+      </nav>
+      <div class="copyright">© 2026 MaynorAI · 为创作者提供更好的工具</div>
+    </div>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
