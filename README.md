@@ -6,13 +6,13 @@
 - 编辑器：https://editor.maynor1024.live/
 - 扩展安装包：https://editor.maynor1024.live/MaynorAI-article-sync-extension.zip
 
-![MaynorAI 文章同步助手首页](docs/hero.png)
+![MaynorAI 文章同步助手首页](https://product.maynor1024.live/docs/hero.png)
 
 ## 三步开始使用
 
 下载扩展并在 Chrome 或 Edge 中加载。在浏览器里登录各目标平台；若要做矩阵号，用隐私窗口添加账号，不必退出当前登录（需允许扩展在 InPrivate / 隐私窗口中运行）。然后登录 MaynorAI 编辑器，写作并同步为草稿。
 
-![安装教程](docs/install.png)
+![安装教程](https://product.maynor1024.live/docs/install.png)
 
 ## 功能特性
 
@@ -20,7 +20,7 @@
 
 微信公众号、知乎、CSDN、哔哩哔哩、什么值得买支持用隐私窗口添加账号；GitHub 用 Token 管理多个账号。其他平台仍使用当前浏览器中的登录态。
 
-![功能特性](docs/features.png)
+![功能特性](https://product.maynor1024.live/docs/features.png)
 
 ## 支持的平台
 
@@ -28,14 +28,4 @@
 
 其中微信公众号、知乎、CSDN、哔哩哔哩、什么值得买和 GitHub 支持同一平台多账号。
 
-![支持的平台](docs/platforms.png)
-
-## 本地预览
-
-本仓库是 GitHub Pages 静态站，自定义域名为 `product.maynor1024.live`。
-
-```bash
-python3 -m http.server 4173
-```
-
-然后打开 http://127.0.0.1:4173/ 。
+![支持的平台](https://product.maynor1024.live/docs/platforms.png)
