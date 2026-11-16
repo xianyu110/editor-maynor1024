@@ -5,12 +5,12 @@
     chrome: {
       label: "Chrome · 手动加载",
       showWin: false,
-      text: `1. 下载扩展安装包\n   ${download}\n2. 解压到本地文件夹，确认其中有 manifest.json。\n3. 在 Chrome 地址栏打开 chrome://extensions\n4. 打开右上角「开发人员模式」。\n5. 点击「加载已解压的扩展程序」，选择该文件夹。\n6. 打开 ${editor} ，点击「扩展连接」或「重新检测」。`,
+      text: `1. 下载扩展安装包\n   ${download}\n2. 解压到本地文件夹，确认其中有 manifest.json。\n3. 在 Chrome 地址栏打开 chrome://extensions\n4. 打开右上角「开发人员模式」。\n5. 点击「加载已解压的扩展程序」，选择该文件夹。\n6. 若要添加矩阵账号，请允许该扩展「在无痕模式下运行」。\n7. 打开 ${editor} ，登录编辑器，点击「扩展连接」或「重新检测」。`,
     },
     edge: {
       label: "Edge / Windows · 手动加载",
       showWin: true,
-      text: `1. 下载扩展安装包\n   ${download}\n2. 解压到本地文件夹，确认其中有 manifest.json。\n3. 在 Edge 地址栏打开 edge://extensions\n   （也可用 Chrome 的 chrome://extensions）\n4. 打开「开发人员模式」。\n5. 点击「加载已解压的扩展程序」，选择该文件夹。\n6. 打开 ${editor} ，点击「扩展连接」或「重新检测」。`,
+      text: `1. 下载扩展安装包\n   ${download}\n2. 解压到本地文件夹，确认其中有 manifest.json。\n3. 在 Edge 地址栏打开 edge://extensions\n   （也可用 Chrome 的 chrome://extensions）\n4. 打开「开发人员模式」。\n5. 点击「加载已解压的扩展程序」，选择该文件夹。\n6. 若要添加矩阵账号，请允许该扩展「在 InPrivate 窗口中运行」。\n7. 打开 ${editor} ，登录编辑器，点击「扩展连接」或「重新检测」。`,
     },
   };
 
