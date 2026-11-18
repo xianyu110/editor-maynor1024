@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <title>MaynorAI 文章同步助手 - 一篇文章发到整个矩阵</title>
-  <meta name="description" content="一篇文章，发到你的整个矩阵，不用退出登录。把内容同步为微信公众号、知乎、CSDN、哔哩哔哩、什么值得买、GitHub 等 23 个平台的草稿；同一平台可添加多个账号。默认不直接发布，账号和 Cookie 只留在这台电脑上。" />
+  <title>MaynorAI 文章同步助手 - 一篇文章同步到多个平台草稿箱</title>
+  <meta name="description" content="把一篇文章同步到微信公众号、知乎、CSDN、哔哩哔哩、什么值得买、GitHub 等 23 个平台的草稿箱，不用退出登录。默认只创建或更新草稿；若在编辑器打开「同步后直接发布」，才会尝试发布。X 长文仍不会自动发布。账号和 Cookie 只留在这台电脑上。" />
   <link rel="canonical" href="https://product.maynor1024.live/" />
   <link rel="icon" href="assets/favicon.ico" sizes="any" />
   <link rel="icon" type="image/png" href="assets/favicon-32.png" sizes="32x32" />
@@ -51,10 +51,10 @@
       <div class="wrap">
         <div class="eyebrow hero-eyebrow">专为 OPC｜一人公司打造 · 浏览器扩展</div>
         <h1>
-          <span class="line">一篇文章，发到你的整个矩阵</span>
+          <span class="line">一篇文章，同步到你的整个矩阵</span>
           <span class="accent">不用退出登录</span>
         </h1>
-        <p class="hero-lead">在 MaynorAI 编辑器写好一篇，就能同步到 23 个平台的草稿箱。<span class="nowrap">微信公众号</span>、<span class="nowrap">知乎</span>、<span class="nowrap">CSDN</span>、<span class="nowrap">哔哩哔哩</span>、<span class="nowrap">什么值得买</span>和 <span class="nowrap">GitHub</span> 还支持同一平台多个账号，不必退出当前登录。默认只存草稿，账号和 Cookie 留在这台电脑上。</p>
+        <p class="hero-lead">在 MaynorAI 编辑器写好一篇，就能同步到 23 个平台的草稿箱。<span class="nowrap">微信公众号</span>、<span class="nowrap">知乎</span>、<span class="nowrap">CSDN</span>、<span class="nowrap">哔哩哔哩</span>、<span class="nowrap">什么值得买</span>和 <span class="nowrap">GitHub</span> 还支持同一平台多个账号，不必退出当前登录。默认只存草稿；若需要，也可在编辑器打开「同步后直接发布」。账号和 Cookie 留在这台电脑上。</p>
         <a class="hero-link" href="#mcp">了解本机扩展如何连接 →</a>
         <div class="hero-actions">
           <a class="btn btn-primary" href="https://editor.maynor1024.live/">打开编辑器</a>
@@ -70,7 +70,7 @@
         <div class="hero-stats" aria-label="产品数据">
           <div><b>23</b><span>同步平台</span></div>
           <div><b>可矩阵</b><span>同平台多账号</span></div>
-          <div><b>草稿优先</b><span>从不直接发布</span></div>
+          <div><b>草稿优先</b><span>默认不直接发布</span></div>
         </div>
         <div class="hero-mock" aria-hidden="true">
           <div class="browser">
@@ -80,7 +80,7 @@
             </div>
             <div class="browser-body">
               <div class="article">
-                <h3>一篇文章，发到你的整个矩阵</h3>
+                <h3>一篇文章，同步到你的整个矩阵</h3>
                 <p>MaynorAI 文章同步助手帮你把同一篇文章写入多个平台、多个账号的草稿箱。主号可以继续登录，再用隐私窗口添加矩阵号，不必先退出。</p>
                 <p><strong>核心能力：</strong></p>
                 <ol>
@@ -180,7 +180,7 @@
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="3"/><path d="M6 19c1.2-3 3.2-4.5 6-4.5S16.8 16 18 19" stroke-linecap="round"/></svg>
             </div>
             <h3>先存草稿，核对后发布</h3>
-            <p>默认只创建或更新草稿，不会直接发布。请到各平台后台检查标题、排版和图片，确认无误后再发布。</p>
+            <p>默认只创建或更新草稿，不会直接发布。若打开编辑器里的「同步后直接发布」，才会尝试发布；X 长文即使打开该开关，也只会尽量填入编辑器并保存草稿，不会自动点击发布。请到各平台后台检查标题、排版和图片后再发布。</p>
           </article>
         </div>
       </div>
@@ -379,9 +379,21 @@
         <div class="section-head">
           <span class="eyebrow">最近更新</span>
           <h2>2026 年 11 月 18 日</h2>
-          <p>扩展 0.2.52 已发布。以下为近期对编辑器和浏览器扩展的实际可见改动。Edge 用户可从<a href="https://microsoftedge.microsoft.com/addons/detail/dmcofieibhiconcpflacmblnkpklhnho" target="_blank" rel="noopener noreferrer">Microsoft Edge 商店</a>安装，也可继续使用编辑器提供的官方安装包。</p>
+          <p>扩展 0.2.55 已发布。以下为近期对编辑器和浏览器扩展的实际可见改动。Edge 用户可从<a href="https://microsoftedge.microsoft.com/addons/detail/dmcofieibhiconcpflacmblnkpklhnho" target="_blank" rel="noopener noreferrer">Microsoft Edge 商店</a>安装，也可继续使用编辑器提供的官方安装包。</p>
         </div>
         <ol class="updates-list">
+          <li>
+            <h3>扩展 0.2.55：CSDN 按当前浏览器登录匹配后再用实时会话</h3>
+            <p>如果当前浏览器登录的正是所选 CSDN 账号，同步会改用这次实时会话，而不是注入可能过期的已存 Cookie。若浏览器里登录的是另一个 CSDN 账号，会明确提示账号不一致，请先切换到对应账号，或在扩展里重新添加。</p>
+          </li>
+          <li>
+            <h3>扩展 0.2.54：优化什么值得买同步，并避免添加 CSDN 账号时用错窗口</h3>
+            <p>向什么值得买同步时，若当前浏览器登录与已保存账号相符，会刷新为实时登录态。登录检测在接口不确认时可用 Cookie 兜底；接口保存失败或未确认登录时，可改在投稿编辑器里继续处理。在隐私窗口添加 CSDN 账号时，会更准确地识别编辑页登录状态；如果普通窗口已经打开了 CSDN 编辑器，会提示你先在隐私窗口里登录再完成添加，以免覆盖已保存的账号。</p>
+          </li>
+          <li>
+            <h3>扩展 0.2.53：CSDN 多账号同步改为匹配后刷新实时登录态</h3>
+            <p>同步到已保存的 CSDN 账号时，如果当前浏览器登录的就是该账号，会刷新并使用实时 Cookie，而不只依赖先前保存的登录态。登录检测在接口不可用时，也会根据 Cookie 判断是否已登录。</p>
+          </li>
           <li>
             <h3>修复 X 长文、小红书长文笔记提示「编辑页还没准备好」</h3>
             <p>同步到 X 长文或小红书长文笔记时，会等编辑页真正打开后再填写；如果扩展脚本还没挂上，会注入后再重试。X 长文仍然只会尽量填入编辑器并保存草稿，不会自动点击发布。</p>
@@ -448,7 +460,7 @@
           </article>
           <article class="faq-item">
             <button type="button" aria-expanded="false">会直接发布文章吗？<span class="chev">⌄</span></button>
-            <div class="answer">不会。同步只会创建或更新目标平台的草稿，不会直接发布。X 长文同样不会自动点击发布，只会尽量填入编辑器，由你核对后手动发布。保存完成后，请到各平台后台核对标题、排版和图片，再由你手动发布。</div>
+            <div class="answer">默认不会。同步只会创建或更新各平台草稿。若你在编辑器打开「同步后直接发布」，扩展会在草稿保存成功后尝试公开发布（发布通常无法撤销）。X 长文即使打开该开关，也只会尽量填入编辑器并保存草稿，不会自动点击发布，需由你核对后手动发布。保存完成后，请到各平台后台核对标题、排版和图片。</div>
           </article>
           <article class="faq-item">
             <button type="button" aria-expanded="false">同步后的文章在哪里？<span class="chev">⌄</span></button>
@@ -480,7 +492,7 @@
 
     <section class="cta-band">
       <div class="wrap">
-        <h2>打开编辑器，把一篇文章发到整个矩阵</h2>
+        <h2>打开编辑器，把一篇文章同步到多个平台草稿箱</h2>
         <p class="sub">不用退出登录 · 草稿优先 · 多平台、多账号同步</p>
         <div class="hero-actions">
           <a class="btn btn-on-brand" href="https://editor.maynor1024.live/">打开编辑器</a>
