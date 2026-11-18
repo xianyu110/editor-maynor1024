@@ -4,13 +4,14 @@
 
 - 产品页：https://product.maynor1024.live/
 - 编辑器：https://editor.maynor1024.live/
+- Edge 商店：https://microsoftedge.microsoft.com/addons/detail/dmcofieibhiconcpflacmblnkpklhnho
 - 扩展安装包：https://editor.maynor1024.live/MaynorAI-article-sync-extension.zip
 
 ![MaynorAI 文章同步助手首页](https://product.maynor1024.live/docs/hero.png)
 
 ## 三步开始使用
 
-下载扩展并在 Chrome 或 Edge 中加载。在浏览器里登录各目标平台；若要做矩阵号，用隐私窗口添加账号，不必退出当前登录（需允许扩展在 InPrivate / 隐私窗口中运行）。然后登录 MaynorAI 编辑器，写作并同步为草稿。
+Edge 用户可从 Microsoft Edge 商店安装，其他浏览器请下载官方安装包并在 Chrome 中加载。在浏览器里登录各目标平台；若要做矩阵号，用隐私窗口添加账号，不必退出当前登录（需允许扩展在 InPrivate / 隐私窗口中运行）。然后登录 MaynorAI 编辑器，写作并同步为草稿。
 
 ![安装教程](https://product.maynor1024.live/docs/install.png)
 

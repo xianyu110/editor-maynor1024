@@ -1,5 +1,6 @@
 (() => {
   const download = "https://editor.maynor1024.live/MaynorAI-article-sync-extension.zip";
+  const store = "https://microsoftedge.microsoft.com/addons/detail/dmcofieibhiconcpflacmblnkpklhnho";
   const editor = "https://editor.maynor1024.live/";
   const snippets = {
     chrome: {
@@ -8,9 +9,9 @@
       text: `1. 下载扩展安装包\n   ${download}\n2. 解压到本地文件夹，确认其中有 manifest.json。\n3. 在 Chrome 地址栏打开 chrome://extensions\n4. 打开右上角「开发人员模式」。\n5. 点击「加载已解压的扩展程序」，选择该文件夹。\n6. 若要添加矩阵账号，请允许该扩展「在无痕模式下运行」。\n7. 打开 ${editor} ，登录编辑器，点击「扩展连接」或「重新检测」。`,
     },
     edge: {
-      label: "Edge / Windows · 手动加载",
+      label: "Edge / Windows · 商店安装",
       showWin: true,
-      text: `1. 下载扩展安装包\n   ${download}\n2. 解压到本地文件夹，确认其中有 manifest.json。\n3. 在 Edge 地址栏打开 edge://extensions\n   （也可用 Chrome 的 chrome://extensions）\n4. 打开「开发人员模式」。\n5. 点击「加载已解压的扩展程序」，选择该文件夹。\n6. 若要添加矩阵账号，请允许该扩展「在 InPrivate 窗口中运行」。\n7. 打开 ${editor} ，登录编辑器，点击「扩展连接」或「重新检测」。`,
+      text: `1. 打开 Microsoft Edge 商店并安装扩展\n   ${store}\n2. 安装后如需添加矩阵账号，请到 edge://extensions 允许该扩展「在 InPrivate 窗口中运行」。\n3. 打开 ${editor} ，登录编辑器，点击「扩展连接」或「重新检测」。\n\n如需手动加载：下载 ${download} ，解压后确认有 manifest.json，再在 edge://extensions 开启「开发人员模式」并加载该文件夹。`,
     },
   };
 
@@ -24,6 +25,11 @@
     codeBody.textContent = snippet.text;
     codeLabel.textContent = snippet.label;
     winTips.classList.toggle("is-show", snippet.showWin);
+    if (copyBtn) {
+      const link = key === "edge" ? store : download;
+      copyBtn.dataset.copy = link;
+      copyBtn.textContent = key === "edge" ? "复制商店链接" : "复制下载链接";
+    }
     document.querySelectorAll(".tab").forEach((tab) => {
       tab.classList.toggle("is-active", tab.dataset.os === key);
     });
