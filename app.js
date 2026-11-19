@@ -34,11 +34,12 @@
       tab.classList.toggle("is-active", tab.dataset.os === key);
     });
   };
-  setOs("chrome");
-
-  document.querySelectorAll(".tab").forEach((tab) => {
-    tab.addEventListener("click", () => setOs(tab.dataset.os));
-  });
+  if (codeBody && codeLabel) {
+    setOs("chrome");
+    document.querySelectorAll(".tab").forEach((tab) => {
+      tab.addEventListener("click", () => setOs(tab.dataset.os));
+    });
+  }
 
   const copyText = async (value, button, okLabel) => {
     try {
