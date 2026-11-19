@@ -327,6 +327,16 @@ button,input{font:inherit}
 }
 
 /* How */
+#guide{padding:88px 0;background:#fff;border-top:1px solid var(--line)}
+.guide-list{display:grid;gap:40px;width:min(880px,100%);margin:0 auto}
+.guide-item h3{margin:0 0 8px;font-size:20px;line-height:1.4;font-weight:700}
+.guide-item p{margin:0 0 14px;color:var(--muted);font-size:15px;line-height:1.75}
+.guide-item figure{
+  margin:0;border:1px solid var(--line);border-radius:16px;overflow:hidden;
+  background:#0f172a;box-shadow:var(--shadow);
+}
+.guide-item img{width:100%;height:auto;vertical-align:top;background:#0f172a}
+
 #how{padding:88px 0;background:var(--bg-soft)}
 .scenes{display:grid;grid-template-columns:1fr 1fr;gap:20px}
 .scene{background:#fff;border-radius:20px;padding:28px 26px;border:1.5px solid #fdcdc3}
